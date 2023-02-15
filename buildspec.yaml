@@ -12,6 +12,3 @@ phases:
     commands:
       - echo Build completed on `date`
       - echo Pushing the Docker image...
-
-artifacts:
-    files: imagedefinitions.json
