@@ -1,10 +1,17 @@
 version: 0.2
+
 phases:
   pre_build:
     commands:
-      - terraform init
-      - terraform validate
-  
+      - echo Logging in to Amazon ECR...
   build:
     commands:
-      - terraform apply --auto-approve
+      - echo Build started on `date`
+      - echo Building the Docker image...          
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - echo Pushing the Docker image...
+
+artifacts:
+    files: imagedefinitions.json
