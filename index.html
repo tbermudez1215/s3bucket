@@ -38,7 +38,7 @@
         text-align: center;
       }
 
-      #logo {
+      #gif {
         height: 50%;
       }
 
@@ -52,9 +52,9 @@
       document.addEventListener(
         "click",
         function (event) {
-          if (!event.target.matches("#logo")) return;
+          if (!event.target.matches("#getNewGif")) return;
           event.preventDefault();
-          var newGif = document.getElementById("logo");
+          var newGif = document.getElementById("gifSpot");
           var randomGif = images[Math.floor(Math.random()*images.length)];
           newGif.src = randomGif;
           console.log(images);
@@ -87,14 +87,14 @@
       </body>
       
       <h2 style="font-family:Weathley Candila">Working On A Project? Need An Expert?</h2>
-<p>Click to Connect with an Entertainment 720 Elite!</p>
+<p>Click to Connect with One of our Elites!</p>
 
     <div class="button">
-      <button id="logo" type="button">Click Me!</button>
+      <button id="getNewGif" type="button">Click Me!</button>
     </div>
     <div class="container">
       <h4>We are Entertainment 720</h4>
-      <img id="logo" src="https://static.wikia.nocookie.net/parksandrecreation/images/3/34/Entertainment_720_Logo.jpg/revision/latest/scale-to-width-down/180?cb=20111013214415" />
+      <img id="gifSpot" src="https://static.wikia.nocookie.net/parksandrecreation/images/3/34/Entertainment_720_gif.jpg/revision/latest/scale-to-width-down/180?cb=20111013214415" />
     </div>
   </body>
 </html>
