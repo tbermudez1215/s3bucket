@@ -12,12 +12,22 @@
         padding: 20px;
         text-align: center;
       }
-      h1 {text-align: center;}
-      p {text-align: center;}
-      pre {text-align: center; text-shadow: black; text-decoration-style: solid;}
+      h1 {text-align: center;
+      }
+      p {
+        text-align: center; 
+        text-decoration-style: wavy;
+      }
+      pre {
+        text-align: center; 
+        text-shadow: black; 
+        text-decoration-style: solid;
+      }
 
-      h2 {text-align: center;}
-      p {text-align: center;}
+      h2 {text-align: center;
+      }
+      p {text-align: center;
+      }
       
       h4 {
         text-transform: uppercase;
@@ -28,7 +38,7 @@
         text-align: center;
       }
 
-      #gifSpot {
+      #logo {
         height: 50%;
       }
 
@@ -42,9 +52,9 @@
       document.addEventListener(
         "click",
         function (event) {
-          if (!event.target.matches("#getNewGif")) return;
+          if (!event.target.matches("#logo")) return;
           event.preventDefault();
-          var newGif = document.getElementById("gifSpot");
+          var newGif = document.getElementById("logo");
           var randomGif = images[Math.floor(Math.random()*images.length)];
           newGif.src = randomGif;
           console.log(images);
@@ -59,7 +69,7 @@
       </head>
       <body>
       
-      <h1>Skillstorm's First and Only Entertainment Conglomerate!</h1>
+      <h1 style="font-family:Weathley Candila">Skillstorm's First and Only Entertainment Conglomerate!</h1>
       <p>Helmed by Nighclub Impresarios and Marketing Masterminds Tania, Ayukncha, Olu, Milton, Tasop and Veronica.</p>
       <pre>
         Entertainment 720 is your one-stop-shop for:
@@ -76,15 +86,15 @@
        </pre>
       </body>
       
-      <h2>Working On A Project? Need An Expert?</h2>
+      <h2 style="font-family:Weathley Candila">Working On A Project? Need An Expert?</h2>
 <p>Click to Connect with an Entertainment 720 Elite!</p>
 
     <div class="button">
-      <button id="getNewGif" type="button">Click Me!</button>
+      <button id="logo" type="button">Click Me!</button>
     </div>
     <div class="container">
       <h4>We are Entertainment 720</h4>
-      <img id="gifSpot" src="https://static.wikia.nocookie.net/parksandrecreation/images/3/34/Entertainment_720_Logo.jpg/revision/latest/scale-to-width-down/180?cb=20111013214415" />
+      <img id="logo" src="https://static.wikia.nocookie.net/parksandrecreation/images/3/34/Entertainment_720_Logo.jpg/revision/latest/scale-to-width-down/180?cb=20111013214415" />
     </div>
   </body>
 </html>
